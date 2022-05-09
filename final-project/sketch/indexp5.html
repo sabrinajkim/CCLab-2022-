@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fan Dance 부채춤 (buchaechum)</title>
+  <script src="p5.js"></script>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    html{
+      background-color: rgb(249, 242, 225);
+    }
+    #bgvid{
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+    }
+    #container{
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      overflow: visible;
+    }
+    body{
+      margin: 0px; 
+    }
+    #sketch-container{
+      padding: 30px;
+      position: relative;
+      width: fit-content;
+      top: 133px;
+      left: 30%;
+    }
+    #back{
+      position: absolute;
+      left: 50px;
+      top: -1px;
+      font-size: 30px;
+    }
+    #topleft{
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    #topright{
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    #bottomleft{
+      position: absolute;
+      left: 0;
+      top: 1000px;
+    }
+    #bottomright{
+      position: absolute;
+      right:  0;
+      top: 1000px;
+    }
+  </style>
+</head>
+<body>
+   <video autoplay muted loop id="bgvid" style="position: fixed;">
+      <source src="/images/oriental motion art.mp4" type="video/mp4">
+    </video>
+  <div id="container">
+    <div id="sketch-container"></div> 
+    <div id="topleft">
+      <img src="/images/corner.png" style="position: absolute;" width="300px"; height="300px">
+    </div>
+    <div id="topright">
+      <img src="/images/corner2.png" style="position: absolute;" width="300px"; height="300px">
+    </div>
+    <div id="bottomright">
+      <img src="/images/corner3.png" style="position: absolute;" width="300px"; height="300px">
+    </div>
+    <div id="bottomleft">
+      <img src="/images/corner4.png" style="position: absolute;" width="300px"; height="300px">
+    </div>
+  </div>
+  <div id="back" >
+    <h3> <a href="/final-project/index.html" target="_blank">go back</a> </h3>
+  </div>
+  <script src="sketch.js"></script>
+</body>
+</html>
