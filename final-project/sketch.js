@@ -27,7 +27,9 @@ function setup() {
  
 }
 
-
+// function windowResized(){
+//   resizeCanvas(max-width,max-height);
+// }
 
 function draw() {
   background(bg);
